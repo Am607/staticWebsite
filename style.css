@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  /* property allows us to include the padding and border in an element's total width and height.
+ */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* header section start */
+
+header {
+  width: 100vw;
+  background-color: rgba(23, 23, 23, 0.15);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+header .header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: px; */
+  margin-left: 100px;
+}
+header a {
+  color: rgb(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin-right: 100px;
+  font-size: 17px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  letter-spacing: 1.5px;
+}
+
+/* header section end */
+
+/* body  section start */
+
+.banner-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(6, 72, 105, 0.8), rgba(53, 151, 190)),
+    url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: fixed;
+  display: flex;
+}
+
+.banner-container .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* align-self: center; */
+
+  align-self: center;
+}
+/* lift  section start */
+.left-section {
+  width: 1000px;
+  align-items: au;
+}
+
+.left-section h1 {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.left-section p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.left-section button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*Left section end */
+
+/*Right  section start */
+.right-section {
+  width: 400px;
+
+  padding: 40px 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.219);
+}
+
+.right-section h4 {
+  font-size: 20px;
+  width: 300px;
+  margin-left: 30px;
+  color: rgba(136, 136, 136);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  width: 300px;
+  margin: 3px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-group label {
+  margin-left: 20px;
+  font-size: 16px;
+  color: rgba(136, 136, 136);
+  position: absolute;
+  top: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 7px;
+  margin: 20px;
+
+  color: rgba(136, 136, 136);
+  margin-top: 10px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.input-group input:focus,
+.input-group input:valid {
+  border-color: var(--primary-color);
+}
+
+.submit-section {
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; */
+
+  text-align: center;
+}
+
+.submit-section button {
+  background-color: rgb(11, 98, 170);
+  border: none;
+  padding: 10px 0px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 270px;
+}
+.submit-button:hover {
+  /* background-color: red; */
+  box-shadow: 0 3px 6px silver;
+}
+
+/*Right section end */
+
+/* section-two  start*/
+.section-two {
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart-container {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 10px 5px 26px rgb(184, 184, 184);
+  overflow: hidden;
+}
+
+.cart-container h1 {
+  color: rgba(136, 136, 136);
+  text-align: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 450px;
+
+  transition: 0.5s, ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+/* section-two  end*/
+/* footer-section sart */
+footer {
+  text-align: center;
+  color: gray;
+  padding: 15px;
+}
+
+footer span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* footer-section end */
